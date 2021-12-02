@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/math10c3-group1/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/math10c3-group1/static/js/main.bcef683b.chunk.js",
+    "main.js.map": "/math10c3-group1/static/js/main.bcef683b.chunk.js.map",
+    "runtime-main.js": "/math10c3-group1/static/js/runtime-main.06e73bf8.js",
+    "runtime-main.js.map": "/math10c3-group1/static/js/runtime-main.06e73bf8.js.map",
+    "static/js/2.a243b533.chunk.js": "/math10c3-group1/static/js/2.a243b533.chunk.js",
+    "static/js/2.a243b533.chunk.js.map": "/math10c3-group1/static/js/2.a243b533.chunk.js.map",
+    "static/js/3.14173ea2.chunk.js": "/math10c3-group1/static/js/3.14173ea2.chunk.js",
+    "static/js/3.14173ea2.chunk.js.map": "/math10c3-group1/static/js/3.14173ea2.chunk.js.map",
+    "index.html": "/math10c3-group1/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/math10c3-group1/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.a243b533.chunk.js.LICENSE.txt": "/math10c3-group1/static/js/2.a243b533.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/math10c3-group1/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06e73bf8.js",
+    "static/js/2.a243b533.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.bcef683b.chunk.js"
+  ]
+}
