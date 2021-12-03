@@ -44,10 +44,27 @@ export default function RubiksCube() {
                         x: 0,
                         y: 1,
                         z: 0,
-                        deg: 225
+                        deg: this.randomizeFace()
                     }
                 }
             }
         }
-    }    
+    }
+    
+
+    /**
+     * Generates a random starting degree.
+     */
+    randomizeFace() {
+        const degrees = [45,135,225]
+        const deg = degrees[this.randomNum(degrees.length)]
+        return (this.randomNum(2) == 0) ? deg : deg*-1
+    }
+
+    /**
+     * Generates a random number from 0 to max-1.
+     */
+    randomNum(max) {
+        return Math.floor(Math.random()*100)%max
+    }
 }
