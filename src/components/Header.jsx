@@ -2,39 +2,42 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
+import { Colors } from '../utils/Colors';
+
+const linkStyle={
+  textDecoration: "none",
+  marginLeft: 50,
+  color: Colors.primary
+}
 
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Toolbar
-        sx={{borderBottom: 1, borderColor: 'divider'}}>
+        sx={{borderBottom: 1, borderColor: "divider"}}>
             <Typography
-                variant='h6'
-                component='h6'>
+                variant="h6"
+                component="h6">
                 Math 10 Project
             </Typography>
 
-            <Button
-              style={{
-                  marginLeft: 50,
-                  textTransform: 'none'}}>
-                Home
-            </Button>
+            <Link to="/" 
+              style={linkStyle}>
+              Home
+            </Link>
 
-            <Button
-              style={{
-                  marginLeft: 50,
-                  textTransform: 'none'}}>
-                Write-up
-            </Button>
+            <Link to="/about" 
+              style={linkStyle}>
+              About
+            </Link>
 
-            <Button
-              style={{
-                  marginLeft: 50,
-                  textTransform: 'none'}}>
-                About
-            </Button>
+            <Link to="/" 
+              style={linkStyle}>
+              Write-up
+            </Link>
+
+
         </Toolbar>
     </Box>
   );
