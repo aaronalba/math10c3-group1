@@ -12,7 +12,7 @@ export default function Header() {
   const [writeUpHover, setWriteUpHover] = useState(false)
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, position: "absolute", }}>
       <Toolbar
         sx={{borderBottom: 1, borderColor: "divider"}}>
             <Typography
