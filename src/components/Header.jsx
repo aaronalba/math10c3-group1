@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   AppBar, 
   Drawer, 
@@ -16,8 +16,9 @@ import SubjectIcon from '@mui/icons-material/Subject';
 import InfoIcon from '@mui/icons-material/Info';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Colors } from '../utils/Colors';
+import { Font } from '../utils/Font';
 
-const drawerWidth = 200
+const drawerWidth = 250
 
 export default function Header() {
   const [isDrawerOpen, setDrawerOpen] = useState(false)
@@ -36,8 +37,8 @@ export default function Header() {
   const toggleDrawer = () => setDrawerOpen(!isDrawerOpen)
 
   return (
-    <div>
-      <AppBar>
+    <Box sx={{flexGrow: 1}}>
+      <AppBar position="absolute">
         <Toolbar>
           {/* Menu */}
           <IconButton
@@ -51,7 +52,7 @@ export default function Header() {
           {/* Title */}
           <Typography
             sx={{
-              fontFamily: "Quicksand",
+              fontFamily: Font.headings,
               fontWeight: "700",
               flexGrow: 1,
               textAlign: "center"
@@ -92,6 +93,6 @@ export default function Header() {
             </List>
           </Box>
       </Drawer>
-    </div>
+    </Box>
   );
 }

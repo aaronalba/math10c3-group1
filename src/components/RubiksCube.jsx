@@ -9,7 +9,7 @@ export default function RubiksCube() {
             width: cubeSize,
             height: cubeSize,
             position: 'absolute',
-            top: 200,
+            top: 160,
             right: 0,
             left: 0,
             margin: 'auto'
