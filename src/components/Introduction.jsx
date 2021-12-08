@@ -12,8 +12,7 @@ export default function Introduction() {
             // sx={{backgroundColor: Colors.secondaryLight}}
             display="block"
             width="100vw"
-            marginTop={15}
-            height={650}>
+            marginTop={15}>
             <Typography
                 fontFamily={Font.headings}
                 textAlign="center"

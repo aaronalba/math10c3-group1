@@ -3,12 +3,12 @@ import * as React from 'react';
 import Header from '../components/Header';
 import Introduction from '../components/Introduction';
 import RubiksCube from '../components/RubiksCube';
-import MemberCard from '../components/MemberCard'
 import { Box } from '@mui/system';
+import Artworks from '../components/Artworks';
 
 function Home() {
     return (
-        <div>
+        <Box display="block">
             {/* Navigation Header */}
             <Header/>
             {/* Header padding */}
@@ -25,9 +25,10 @@ function Home() {
 
             {/* Introduction section */}
             <Introduction />
-
- 
-        </div>
+            
+            {/* Artworks section */}
+            <Artworks />
+        </Box>
     )
 }
 
