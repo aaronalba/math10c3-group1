@@ -9,8 +9,7 @@ export default function RubiksCube() {
             width: cubeSize,
             height: cubeSize,
             position: 'absolute',
-            top: 100,
-            bottom: 100,
+            top: 200,
             right: 0,
             left: 0,
             margin: 'auto'
@@ -58,7 +57,7 @@ export default function RubiksCube() {
     randomizeFace() {
         const degrees = [45,135,225]
         const deg = degrees[this.randomNum(degrees.length)]
-        return (this.randomNum(2) == 0) ? deg : deg*-1
+        return (this.randomNum(2) === 0) ? deg : deg*-1
     }
 
     /**
