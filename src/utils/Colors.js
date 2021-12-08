@@ -6,6 +6,7 @@ const Colors = {
     secondary: '#18ffff',
     secondaryLight: '#76ffff',
     secondaryDark: '#00cbcc',
+    lightGray: '#f4f4f4',
 }
 
 export {
