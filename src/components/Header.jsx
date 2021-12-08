@@ -51,6 +51,8 @@ export default function Header() {
           {/* Title */}
           <Typography
             sx={{
+              fontFamily: "Quicksand",
+              fontWeight: "700",
               flexGrow: 1,
               textAlign: "center"
             }}
@@ -73,12 +75,18 @@ export default function Header() {
               {drawerItems.map(item => (
                 // Individual Button
                 <ListItem
-                  sx={{backgroundColor: (location.pathname == item.path) ? Colors.lightGray : null}}
+                  sx={{
+                    backgroundColor: (location.pathname == item.path) ? Colors.lightGray : null
+                  }}
                   onClick={() => navigate(item.path)}
                   button
                   key={item.text}>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
+
+                  <ListItemIcon>
+                    {item.icon}
+                  </ListItemIcon>
+                  
+                  <ListItemText primary={item.text}/>
                 </ListItem>
               ))}
             </List>

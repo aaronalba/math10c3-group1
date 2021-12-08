@@ -1,7 +1,6 @@
 import * as React from 'react';
 // import { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import MemberCard from '../components/MemberCard';
 import RubiksCube from '../components/RubiksCube';
 
 function Home() {
