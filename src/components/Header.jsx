@@ -77,7 +77,7 @@ export default function Header() {
                 // Individual Button
                 <ListItem
                   sx={{
-                    backgroundColor: (location.pathname == item.path) ? Colors.lightGray : null
+                    backgroundColor: (location.pathname === item.path) ? Colors.lightGray : null
                   }}
                   onClick={() => navigate(item.path)}
                   button

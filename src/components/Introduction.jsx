@@ -1,7 +1,6 @@
 import { Typography, Container } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
-import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 
 const containerMarginTop = 5

@@ -1,14 +1,13 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
-import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 import ArtworkItem from './ArtworkItem';
 
 export default function Artworks() {
     return (
         <Box 
-            sx={{backgroundColor: Colors.secondaryLight}}
+            // sx={{backgroundColor: Colors.secondaryLight}}
             display="block"
             width="100vw"
             marginTop={15}>
@@ -19,8 +18,12 @@ export default function Artworks() {
                 Artworks
             </Typography>
 
-            <ArtworkItem color={"pink"}/>
-            <ArtworkItem color={"green"}/>
+            <ArtworkItem />
+            <ArtworkItem left/>
+            <ArtworkItem />
+            <ArtworkItem left/>
+            <ArtworkItem />
+            <ArtworkItem left/>
         </Box>
     )
 }
