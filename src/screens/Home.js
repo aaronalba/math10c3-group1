@@ -1,10 +1,10 @@
 import * as React from 'react';
-// import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Introduction from '../components/Introduction';
 import RubiksCube from '../components/RubiksCube';
 import { Box } from '@mui/system';
 import Artworks from '../components/Artworks';
+import Poems from '../components/Poems';
 
 function Home() {
     return (
@@ -28,6 +28,9 @@ function Home() {
             
             {/* Artworks section */}
             <Artworks />
+
+            {/* Poems section */}
+            <Poems />
         </Box>
     )
 }
