@@ -14,7 +14,7 @@ export default function ArtworkItem({color, left}) {
 
                     <Grid item sx={12} md={6}>
                         <Container>
-                            <Typography variant="h5" fontFamily={Font.headings}>
+                            <Typography variant="h5" fontFamily={Font.headings} fontWeight={700}>
                                 Title
                             </Typography>
                             <Typography variant="p" fontFamily={Font.paragraphs}>
@@ -29,7 +29,7 @@ export default function ArtworkItem({color, left}) {
                 <>
                     <Grid item sx={12} md={6}>
                         <Container>
-                            <Typography variant="h5" fontFamily={Font.headings}>
+                            <Typography variant="h5" fontFamily={Font.headings} fontWeight={700}>
                                 Title
                             </Typography>
                             <Typography variant="p" fontFamily={Font.paragraphs}>
