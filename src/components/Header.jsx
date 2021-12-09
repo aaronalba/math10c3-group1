@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { 
   AppBar, 
   Drawer, 
@@ -16,8 +16,9 @@ import SubjectIcon from '@mui/icons-material/Subject';
 import InfoIcon from '@mui/icons-material/Info';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Colors } from '../utils/Colors';
+import { Font } from '../utils/Font';
 
-const drawerWidth = 200
+const drawerWidth = 250
 
 export default function Header() {
   const [isDrawerOpen, setDrawerOpen] = useState(false)
@@ -36,8 +37,8 @@ export default function Header() {
   const toggleDrawer = () => setDrawerOpen(!isDrawerOpen)
 
   return (
-    <div>
-      <AppBar>
+    <Box sx={{flexGrow: 1}}>
+      <AppBar position="absolute">
         <Toolbar>
           {/* Menu */}
           <IconButton
@@ -51,6 +52,8 @@ export default function Header() {
           {/* Title */}
           <Typography
             sx={{
+              fontFamily: Font.headings,
+              fontWeight: "700",
               flexGrow: 1,
               textAlign: "center"
             }}
@@ -73,17 +76,23 @@ export default function Header() {
               {drawerItems.map(item => (
                 // Individual Button
                 <ListItem
-                  sx={{backgroundColor: (location.pathname == item.path) ? Colors.lightGray : null}}
+                  sx={{
+                    backgroundColor: (location.pathname === item.path) ? Colors.lightGray : null
+                  }}
                   onClick={() => navigate(item.path)}
                   button
                   key={item.text}>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
+
+                  <ListItemIcon>
+                    {item.icon}
+                  </ListItemIcon>
+                  
+                  <ListItemText primary={item.text}/>
                 </ListItem>
               ))}
             </List>
           </Box>
       </Drawer>
-    </div>
+    </Box>
   );
 }

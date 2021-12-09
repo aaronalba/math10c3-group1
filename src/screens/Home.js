@@ -1,22 +1,37 @@
 import * as React from 'react';
-// import { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import MemberCard from '../components/MemberCard';
+import Introduction from '../components/Introduction';
 import RubiksCube from '../components/RubiksCube';
+import { Box } from '@mui/system';
+import Artworks from '../components/Artworks';
+import Poems from '../components/Poems';
 
 function Home() {
     return (
-        <div>
+        <Box display="block">
             {/* Navigation Header */}
             <Header/>
+            {/* Header padding */}
+            <Box display="block" sx={{height: 44}} /> 
             
-            {/* Rubiks cube section */}
-            <div style={{background: '#ffffff', height: 550, width: "100%"}}>
-                <RubiksCube/>
-            </div>
 
+            {/* Rubiks cube section */}
+            <Box
+                sx={{minWidth: '100%'}}            
+                height={550}>
+                <RubiksCube />
+            </Box>
             
-        </div>
+
+            {/* Introduction section */}
+            <Introduction />
+            
+            {/* Artworks section */}
+            <Artworks />
+
+            {/* Poems section */}
+            <Poems />
+        </Box>
     )
 }
 

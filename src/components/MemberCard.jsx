@@ -1,12 +1,11 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import * as React from "react";
 
-export default function MemberCard() {
+export default function MemberCard({name, course, email}) {
     return (
         <Card
             elevation={1}
             sx={{
-                margin: 5,
                 minWidth: 250,
             }}
             variant="outlined">
@@ -30,15 +29,15 @@ export default function MemberCard() {
                 <Typography
                     variant="h5"
                     align="center">
-                    Aaron Alba
+                    {name || "empty name"}
                 </Typography>
                 <Typography
                     align="center">
-                    BS Computer Science
+                    {course || "empty course"}
                 </Typography>
                 <Typography
                     align="center">
-                    Email?
+                    {email || "empty email"}
                 </Typography>
                 <Typography
                     align="center">
