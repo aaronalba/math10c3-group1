@@ -5,8 +5,10 @@ import { Font } from '../utils/Font';
 import ArtworkItem from './ArtworkItem';
 import Artwork1 from "../img/artwork1.png";
 import Artwork2 from "../img/artwork2.png";
+import Artwork3 from "../img/artwork3.png";
 import Artwork4 from "../img/artwork4.png";
 import Artwork5 from "../img/artwork5.png";
+import Artwork6 from "../img/artwork6.png";
 import Artwork1_plain from "../img/artwork1_plain.png";
 import Artwork4_plain from "../img/artwork4_plain.png";
 import { Members } from '../utils/Members';
@@ -14,8 +16,10 @@ import { Members } from '../utils/Members';
 export default function Artworks() {
     const art1_title = "Euler's method and space exploration"
     const art2_title = "The mathematics in nature"
+    const art3_title = "Euclid"
     const art4_title = "Binary and math in technology"
     const art5_title = "Permutation and Combination"
+    const art6_title = "Algorithm"
 
     return (
         <Box 
@@ -44,7 +48,10 @@ export default function Artworks() {
                 img={Artwork2} />
 
             {/* Artwork 3 */}
-            <ArtworkItem />
+            <ArtworkItem
+                title={art3_title}
+                author={Members.matias}
+                img={Artwork3} />
 
             {/* Artwork 4 */}
             <ArtworkItem
@@ -60,7 +67,11 @@ export default function Artworks() {
                 img={Artwork5} />
 
             {/* Artwork 6 */}
-            <ArtworkItem left/>
+            <ArtworkItem
+                img={Artwork6}
+                author={Members.matias}
+                title={art6_title}
+                left/>
         </Box>
     )
 }
