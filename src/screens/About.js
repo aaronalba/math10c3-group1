@@ -1,4 +1,4 @@
-import { Container, Grid, Paper, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
 import Header from '../components/Header';
@@ -38,7 +38,8 @@ export default function About() {
                     item
                     paddingTop={2}                                        
                     sx={12} 
-                    md={4}>
+                    md={4}
+                    xl={2}>
                     <MemberCard
                         name="Maria Carmela Aguilar" />                    
                 </Grid>
@@ -46,7 +47,8 @@ export default function About() {
                     item 
                     paddingTop={2}
                     sx={12} 
-                    md={4}>
+                    md={4}
+                    xl={2}>
                     <MemberCard
                         name="Neil Johann Matias" />
                 </Grid>   
@@ -54,7 +56,8 @@ export default function About() {
                     item 
                     paddingTop={2}
                     sx={12} 
-                    md={4}>
+                    md={4}
+                    xl={2}>
                     <MemberCard
                         name="Jude Datinguinoo"/>
                 </Grid>   
@@ -62,7 +65,8 @@ export default function About() {
                     item 
                     paddingTop={2}
                     sx={12} 
-                    md={4}>
+                    md={4}
+                    xl={2}>
                     <MemberCard
                         name="Aaron Alba"/>
                 </Grid>   
@@ -70,7 +74,8 @@ export default function About() {
                     item 
                     paddingTop={2}                
                     sx={12} 
-                    md={4}>
+                    md={4}
+                    xl={2}>
                     <MemberCard
                         name="Charyl Jan Alejandro" />
                 </Grid>   

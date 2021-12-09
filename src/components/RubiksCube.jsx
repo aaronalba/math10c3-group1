@@ -1,9 +1,14 @@
 import * as React from 'react';
 import Cube from 'react-3d-cube';
-
+import Artwork1 from "../img/artwork1_min.png";
+import Artwork2 from "../img/artwork2_min.png";
+import Artwork3 from "../img/artwork3_min.png";
+import Artwork4 from "../img/artwork4_min.png";
+import Artwork5 from "../img/artwork5_min.png";
+import Artwork6 from "../img/artwork6_min.png";
 const cubeSize = 350
 
-export default function RubiksCube() {
+export default function RubiksCube({artworks}) {
     return (
         <div style={{
             width: cubeSize,
@@ -16,7 +21,15 @@ export default function RubiksCube() {
         }}>
             <Cubev2
                 size={cubeSize}
-                index="tilted"/>
+                index="tilted">
+
+                <img src={Artwork1} alt="artwork1" />
+                <img src={Artwork2} alt="artwork2" />
+                <img src={Artwork3} alt="artwork3" />
+                <img src={Artwork4} alt="artwork4" />
+                <img src={Artwork5} alt="artwork5" />
+                <img src={Artwork6} alt="artwork6" />
+            </Cubev2>
         </div>
     )
 }
