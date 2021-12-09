@@ -36,6 +36,7 @@ export default function ArtworkItem({title, author, content, color, left, img}) 
     const getImg = () => {
         return (
             <img
+                style={{border: `1px solid #ddd`}}            
                 width={imgSize}
                 height={imgSize}
                 src={img}

@@ -21,10 +21,28 @@ export default function Poems() {
             </Typography>
 
             <Grid container
-                spacing={10}
+                spacing={3}
                 align="center"
-                padding={10}>
-                {/* Poem 1 */}
+                paddingTop={5} >
+                
+                {/* Poem 1 Part 1*/}
+                <Grid item xs={12} md={6}>
+                    <img
+                        width={480}
+                        height={853} 
+                        src={OneTwist1}
+                        alt="poem" />
+                </Grid>
+                {/* Poem 1 Part 2*/}
+                <Grid item xs={12} md={6}>
+                    <img
+                        width={480}
+                        height={853} 
+                        src={OneTwist2}
+                        alt="poem" />
+                </Grid>
+
+                {/* Poem 2 */}
                 <Grid item xs={12} md={12}>
                     <img
                         width={480}
@@ -33,22 +51,6 @@ export default function Poems() {
                         alt="poem" />
                 </Grid>
 
-                {/* Poem 2 Part 1*/}
-                <Grid item xs={12} md={6}>
-                    <img
-                        width={480}
-                        height={853} 
-                        src={OneTwist1}
-                        alt="poem" />
-                </Grid>
-                {/* Poem 2 Part 2*/}
-                <Grid item xs={12} md={6}>
-                    <img
-                        width={480}
-                        height={853} 
-                        src={OneTwist2}
-                        alt="poem" />
-                </Grid>
             </Grid>
         </Box>
     )

@@ -3,10 +3,12 @@ import { Box } from '@mui/system';
 import * as React from 'react';
 import { Font } from '../utils/Font';
 import ArtworkItem from './ArtworkItem';
-import Artwork1 from "../img/artwork1.png"
-import Artwork2 from "../img/artwork2.png"
-import Artwork4 from "../img/artwork4.png"
-import Artwork5 from "../img/artwork5.png"
+import Artwork1 from "../img/artwork1.png";
+import Artwork2 from "../img/artwork2.png";
+import Artwork4 from "../img/artwork4.png";
+import Artwork5 from "../img/artwork5.png";
+import Artwork1_plain from "../img/artwork1_plain.png";
+import Artwork4_plain from "../img/artwork4_plain.png";
 import { Members } from '../utils/Members';
 
 export default function Artworks() {
@@ -32,7 +34,7 @@ export default function Artworks() {
             <ArtworkItem
                 title={art1_title}
                 author={Members.aguilar}
-                img={Artwork1} />
+                img={Artwork1_plain} />
 
             {/* Artwork 2 */}
             <ArtworkItem 
@@ -49,7 +51,7 @@ export default function Artworks() {
                 left
                 author={Members.aguilar}
                 title={art4_title}
-                img={Artwork4} />
+                img={Artwork4_plain} />
 
             {/* Artwork 5 */}
             <ArtworkItem
