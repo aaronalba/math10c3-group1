@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Cube from 'react-3d-cube';
-import Artwork1 from "../img/artwork1.png";
-import Artwork2 from "../img/artwork2.png";
-import Artwork3 from "../img/artwork3.png";
-import Artwork4 from "../img/artwork4.png";
-import Artwork5 from "../img/artwork5.png";
-import Artwork6 from "../img/artwork6.png";
+import Artwork1 from "../img/artwork1_min.png";
+import Artwork2 from "../img/artwork2_min.png";
+import Artwork3 from "../img/artwork3_min.png";
+import Artwork4 from "../img/artwork4_min.png";
+import Artwork5 from "../img/artwork5_min.png";
+import Artwork6 from "../img/artwork6_min.png";
 const cubeSize = 350
 
 export default function RubiksCube({artworks}) {
