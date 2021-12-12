@@ -85,6 +85,7 @@ export default function Artworks() {
 
             {/* Artwork Yellow */}
             <ArtworkItem
+                left
                 content={yellow_content}
                 title={yellow_title}
                 author={Members.aguilar}
@@ -92,7 +93,6 @@ export default function Artworks() {
 
             {/* Artwork White */}
             <ArtworkItem
-                left
                 content={white_content}
                 author={Members.aguilar}
                 title={white_title}

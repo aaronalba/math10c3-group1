@@ -5,10 +5,12 @@ import RubiksCube from '../components/RubiksCube';
 import { Box } from '@mui/system';
 import Artworks from '../components/Artworks';
 import Poems from '../components/Poems';
+import { Colors } from '../utils/Colors';
 
 function Home() {
     return (
-        <Box display="block">
+        <Box display="block" 
+        sx={{backgroundColor: Colors.background1}}>
             {/* Navigation Header */}
             <Header/>
             {/* Header padding */}
