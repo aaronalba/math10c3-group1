@@ -7,6 +7,9 @@ import PuzzlingWorld from '../img/puzzling_world.png';
 import OneTwist1 from '../img/one_twist_1_min.png';
 import OneTwist2 from '../img/one_twist_2_min.png';
 
+const alba_content = `My inspirations in writing this poem are innovation and human advancement. Technology made possible by mathematics has helped us accomplish tasks beyond our physical capabilities. It is an invaluable tool that shaped our modern world and will continue molding our future. One of my main takeaways from the course is that math started to be developed because of its utility. It helped us describe quantities that are greater than the number of our fingers could have expressed. Math became our mental extension and is very useful for solving challenging problems. Until now, it is a driver of innovation and is used for unraveling the universes’ nature and mysteries. It is our means of understanding and living in this very puzzling world.`
+const alejandro_content = `This poem is intended for those who are in the middle of chaos, for those who are struggling to find their self-worth and purpose in life, for those who are pressured to please the society where they belong, for those who are still in the process of self-discovery, for those who are overwhelmed and for those who are still searching for the right and perfect position that will make themselves fulfilled. Despite these challenges that you are facing right now, it is okay to discover and work with yourself at your own phase and time. It is okay to take a thousand clueless ups and downs, trials and errors, working through night and day. As long as you try to find new ways to deal with uncertainties, everything is totally fine. At the end of the day, everything will be resolved. Everything will achieve great success. Always remember that nothing worth having comes easy. Everything is worth a try.`
+
 export default function Poems() {
     return (
         <Box             
