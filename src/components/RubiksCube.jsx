@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Cube from 'react-3d-cube';
-import Artwork1 from "../img/artwork1_min.png";
-import Artwork2 from "../img/artwork2_min.png";
-import Artwork3 from "../img/artwork3_min.png";
-import Artwork4 from "../img/artwork4_min.png";
-import Artwork5 from "../img/artwork5_min.png";
-import Artwork6 from "../img/artwork6_min.png";
+import ArtworkYellow from "../img/yellow_min.png";
+import ArtworkOrange from "../img/orange_min.png";
+import ArtworkRed from "../img/red_min.png";
+import ArtworkWhite from "../img/white_min.png";
+import ArtworkGreen from "../img/green_min.png";
+import ArtworkBlue from "../img/blue_min.png";
 const cubeSize = 350
 
 export default function RubiksCube({artworks}) {
@@ -23,12 +23,12 @@ export default function RubiksCube({artworks}) {
                 size={cubeSize}
                 index="tilted">
 
-                <img src={Artwork1} alt="artwork1" />
-                <img src={Artwork2} alt="artwork2" />
-                <img src={Artwork3} alt="artwork3" />
-                <img src={Artwork4} alt="artwork4" />
-                <img src={Artwork5} alt="artwork5" />
-                <img src={Artwork6} alt="artwork6" />
+                <img src={ArtworkRed} alt="artwork_redFace" />
+                <img src={ArtworkGreen} alt="artwork_greenFace" />
+                <img src={ArtworkOrange} alt="artwork_orangeFace" />
+                <img src={ArtworkBlue} alt="artwork_blueFace" />
+                <img src={ArtworkWhite} alt="artwork_whiteFace" />
+                <img src={ArtworkYellow} alt="artwork_yellowFace" />
             </Cubev2>
         </div>
     )

@@ -3,14 +3,12 @@ import { Box } from '@mui/system';
 import * as React from 'react';
 import { Font } from '../utils/Font';
 import ArtworkItem from './ArtworkItem';
-import Artwork1 from "../img/artwork1.png";
-import Artwork2 from "../img/artwork2.png";
-import Artwork3 from "../img/artwork3.png";
-import Artwork4 from "../img/artwork4.png";
-import Artwork5 from "../img/artwork5.png";
-import Artwork6 from "../img/artwork6.png";
-import Artwork1_plain from "../img/artwork1_plain.png";
-import Artwork4_plain from "../img/artwork4_plain.png";
+import ArtworkYellow from "../img/yellow_plain_min.png";
+import ArtworkOrange from "../img/orange_plain_min.png";
+import ArtworkRed from "../img/red_plain_min.png";
+import ArtworkWhite from "../img/white_plain_min.png";
+import ArtworkGreen from "../img/green_plain_min.png";
+import ArtworkBlue from "../img/blue_plain_min.png";
 import { Members } from '../utils/Members';
 
 const art1_title = "Math in space exploration"
@@ -41,47 +39,47 @@ export default function Artworks() {
                 Artworks
             </Typography>
 
-            {/* Artwork 1 */}
+            {/* Artwork Yellow */}
             <ArtworkItem
                 content={art1_content}
                 title={art1_title}
                 author={Members.aguilar}
-                img={Artwork1_plain} />
+                img={ArtworkYellow} />
 
-            {/* Artwork 2 */}
+            {/* Artwork Green */}
             <ArtworkItem 
                 left
                 content={art2_content}
                 title={art2_title}
                 author={Members.datinguinoo}
-                img={Artwork2} />
+                img={ArtworkOrange} />
 
-            {/* Artwork 3 */}
+            {/* Artwork Red */}
             <ArtworkItem
                 title={art3_title}
                 author={Members.matias}
-                img={Artwork3} />
+                img={ArtworkRed} />
 
-            {/* Artwork 4 */}
+            {/* Artwork White */}
             <ArtworkItem
                 left
                 content={art4_content}
                 author={Members.aguilar}
                 title={art4_title}
-                img={Artwork4_plain} />
+                img={ArtworkWhite} />
 
-            {/* Artwork 5 */}
+            {/* Artwork Green */}
             <ArtworkItem
                 content={art5_content}
                 author={Members.datinguinoo}
                 title={art5_title}
-                img={Artwork5} />
+                img={ArtworkGreen} />
 
-            {/* Artwork 6 */}
+            {/* Artwork Blue */}
             <ArtworkItem
-                img={Artwork6}
                 author={Members.matias}
                 title={art6_title}
+                img={ArtworkBlue}
                 left/>
         </Box>
     )

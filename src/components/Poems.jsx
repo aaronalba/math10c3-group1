@@ -4,8 +4,8 @@ import * as React from 'react';
 import { Font } from '../utils/Font';
 import Sample from '../img/sample.png';
 import PuzzlingWorld from '../img/puzzling_world.png';
-import OneTwist1 from '../img/one_twist_1.png';
-import OneTwist2 from '../img/one_twist_2.png';
+import OneTwist1 from '../img/one_twist_1_min.png';
+import OneTwist2 from '../img/one_twist_2_min.png';
 
 export default function Poems() {
     return (
