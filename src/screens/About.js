@@ -3,11 +3,13 @@ import { Box } from '@mui/system';
 import * as React from 'react';
 import Header from '../components/Header';
 import MemberCard from '../components/MemberCard';
+import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 
 export default function About() {
     return (
-        <>
+        <Box
+            sx={{backgroundColor: Colors.background1}}>
             {/* Navigation Header */}
             <Header/>
             {/* Header padding */}
@@ -80,6 +82,6 @@ export default function About() {
                         name="Charyl Jan Alejandro" />
                 </Grid>   
             </Grid>
-        </>
+        </Box>
     )
 }

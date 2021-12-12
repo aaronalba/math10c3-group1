@@ -55,9 +55,18 @@ export default function ArtworkItem({title, author, content, color, left, img}) 
                 </Typography>
                 <br/>                      
                 <br/>
-                <Typography variant="p" fontFamily={Font.paragraphs}>
-                    {content || lorem()}
-                </Typography>
+            
+                {
+                    content.map(e => (                        
+                        <>
+                            <Typography variant="p" fontFamily={Font.paragraphs}>
+                                {e}
+                            </Typography>
+                            {(content.length > 1) ? <><br/><br/></> :  null}
+                        </>
+                        
+                    ))
+                }
             </Container>
         )
     }
