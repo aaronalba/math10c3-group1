@@ -9,6 +9,7 @@ import { Members } from '../utils/Members';
 import aguilar from '../img/members/aguilar.jpg';
 import alba from '../img/members/alba.jpg';
 import alejandro from '../img/members/alejandro.jpg';
+import datinguinoo from '../img/members/datinguinoo.jpg';
 import matias from '../img/members/matias.jpg';
 
 const members = [
@@ -33,6 +34,9 @@ const members = [
     {
         name: Members.datinguinoo, 
         course: `BS Agriculture`,
+        email: `jddatinguinoo@up.edu.ph`,
+        image: datinguinoo,
+
     },
     {
         name: Members.matias, 
@@ -69,8 +73,8 @@ export default function About() {
                 spacing={1}
                 direction="row"
                 padding={1}
-                paddingLeft={20}
-                paddingRight={20}
+                // paddingLeft={20}
+                // paddingRight={20}
                 align="center"
                 justifyContent="center"
                 container>
