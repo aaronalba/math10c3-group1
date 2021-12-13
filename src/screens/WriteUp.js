@@ -2,7 +2,7 @@ import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import { Colors } from '../utils/Colors';
-// import pdf from '../docs/test.pdf';
+import pdf from '../docs/MATH10C3G1_Write-up.pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { Container } from '@mui/material';
 
@@ -24,8 +24,7 @@ export default function WriteUp() {
             {/* Header padding */}
             <Box display="block" sx={{height: 44}} />
 
-            
-            {/* <Document                                     
+            <Document                                     
                 onLoadSuccess={onDocumentLoadSuccess}
                 file={pdf}>
                 {Array.from(
@@ -38,7 +37,7 @@ export default function WriteUp() {
                         />
                     ),
                 )}
-            </Document> */}
+            </Document>
         </Box>
     )
 }
