@@ -34,9 +34,7 @@ function Home() {
 
             {/* Poems section */}
             <Poems />
-
-            {/* References section */}
-            <Reference />
+            
         </Box>
     )
 }

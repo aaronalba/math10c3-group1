@@ -33,9 +33,9 @@ export default function Reference() {
             // sx={{backgroundColor: Colors.secondaryLight}}
             display="block"
             width="100vw"
-            marginTop={15}>
+            marginTop={2}>
             <Typography
-                color={Colors.primary}
+                color={Colors.secondary}
                 fontFamily={Font.headings}
                 fontWeight={500}
                 textAlign="center"

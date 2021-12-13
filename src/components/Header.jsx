@@ -15,6 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SubjectIcon from '@mui/icons-material/Subject';
 import InfoIcon from '@mui/icons-material/Info';
 import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
@@ -31,6 +32,7 @@ export default function Header() {
     {text: "Home", icon: <SubjectIcon/>, path: "/"},
     {text: "Write-up", icon: <DriveFileRenameOutlineIcon />, path: "/writeup"},
     {text: "About", icon: <InfoIcon />, path: "/about"},
+    {text: "References", icon: <LibraryBooksIcon />, path: "/references"},
   ]
 
   /**
