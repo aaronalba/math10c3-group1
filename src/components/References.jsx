@@ -16,7 +16,7 @@ const references = [
     {t: `The age-old sunflower conjecture may soon be solved. (2019, October 27). Popular Mechanics. Retrieved December 7, 2021, from`, l: `https://www.popularmechanics.com/science/math/a29579746/sunflower-math-problem/`},
     {t: `The golden ratio in sunflowers | The lasting journey to life long learning. (2015, November 20). Retrieved December 7, 2021, from`, l: `https://blogs.glowscotland.org.uk/glowblogs/njoldfieldeportfolio1/2015/11/20/the-golden-ratio-in-nature-and-art/`},
     {t: `Van, D. (2019, May 28). Using Rubik’s Cubes to Teach Math. Retrieved from Edutopia website:`, l: `https://www.edutopia.org/article/using-rubiks-cubes-teach-math`},
-    {t: `AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from`, l: `AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from https://www.alleydog.com/glossary/definition.php?term=Trial+And+Error#:~:text=Trial%20and%20error%20is%20a,t%20trying%20a%20new%20method.`},
+    {t: `AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from`, l: `https://www.alleydog.com/glossary/definition.php?term=Trial+And+Error#:~:text=Trial%20and%20error%20is%20a,t%20trying%20a%20new%20method.`},
     {t: `CFI Education Inc. (2021). What is a Combination? Retrieved December 12, 2021 from`, l: `https://corporatefinanceinstitute.com/resources/knowledge/other/combination/.`},
     {l: `‌https://www.computersciencedegreehub.com/lists/5-types-of-math-used-in-computer-science/`},
     {l: `https://ethw.org/Binary_Numbers_and_Binary_Math`},
