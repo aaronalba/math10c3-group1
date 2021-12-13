@@ -27,8 +27,8 @@ export default function RubiksCube({artworks}) {
                 <img src={ArtworkGreen} alt="artwork_greenFace" />
                 <img src={ArtworkOrange} alt="artwork_orangeFace" />
                 <img src={ArtworkBlue} alt="artwork_blueFace" />
-                <img src={ArtworkWhite} alt="artwork_whiteFace" />
                 <img src={ArtworkYellow} alt="artwork_yellowFace" />
+                <img src={ArtworkWhite} alt="artwork_whiteFace" />                
             </Cubev2>
         </div>
     )
