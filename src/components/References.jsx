@@ -16,14 +16,14 @@ const references = [
     {t: `The age-old sunflower conjecture may soon be solved. (2019, October 27). Popular Mechanics. Retrieved December 7, 2021, from`, l: `https://www.popularmechanics.com/science/math/a29579746/sunflower-math-problem/`},
     {t: `The golden ratio in sunflowers | The lasting journey to life long learning. (2015, November 20). Retrieved December 7, 2021, from`, l: `https://blogs.glowscotland.org.uk/glowblogs/njoldfieldeportfolio1/2015/11/20/the-golden-ratio-in-nature-and-art/`},
     {t: `Van, D. (2019, May 28). Using Rubik’s Cubes to Teach Math. Retrieved from Edutopia website:`, l: `https://www.edutopia.org/article/using-rubiks-cubes-teach-math`},
-    {t: `AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from`, l: `https://www.alleydog.com/glossary/definition.php?term=Trial+And+Error#:~:text=Trial%20and%20error%20is%20a,t%20trying%20a%20new%20method.`},
-    {t: `CFI Education Inc. (2021). What is a Combination? Retrieved December 12, 2021 from`, l: `https://corporatefinanceinstitute.com/resources/knowledge/other/combination/.`},
-    {l: `‌https://www.computersciencedegreehub.com/lists/5-types-of-math-used-in-computer-science/`},
-    {l: `https://ethw.org/Binary_Numbers_and_Binary_Math`},
-    {l: `https://mikkegoes.com/computer-science-binary-code-explained`},
-    {l: `https://blog.wolfram.com/2017/02/24/hidden-figures-modern-approaches-to-orbit-and-reentry-calculations/`},
-    {l: `https://aperiodical.com/2018/11/eulers-method-in-structural-engineering/ 
-    https://brilliant.org/wiki/eulers-method/`},
+    {t: `Trial And Error definition | Psychology Glossary | alleydog.com. (n.d.). AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from AlleyDog.com. (2021). Trial And Error. Retrieved December 12, 2021 from`, l: `https://www.alleydog.com/glossary/definition.php?term=Trial+And+Error#:~:text=Trial%20and%20error%20is%20a,t%20trying%20a%20new%20method.`},
+    {t: `Combination - Definition, Formula, and Practical Example. (n.d.). Corporate Finance Institute.`, l: `https://corporatefinanceinstitute.com/resources/knowledge/other/combination/`},
+    {t: `5 Types of Math Used in Computer Science. (n.d.). Computer Science Degree Hub.`, l: `‌https://www.computersciencedegreehub.com/lists/5-types-of-math-used-in-computer-science/`},
+    {t: `Binary Numbers and Binary Math. (2018, July 12). Engineering and Technology History Wiki.`, l: `https://ethw.org/Binary_Numbers_and_Binary_Math`},
+    {t: `Mikke. (2019, July 15). Binary Code Explained Step-by-Step: How Does Binary Work? Mikke Goes Coding.`, l: `https://mikkegoes.com/computer-science-binary-code-explained`},
+    {t: `Bryant, J., Jain, P., & Trott, M. (2017, February 24). Hidden Figures: Modern Approaches to Orbit and Reentry Calculations—Wolfram Blog. Wolfram Blog.`, l: `https://blog.wolfram.com/2017/02/24/hidden-figures-modern-approaches-to-orbit-and-reentry-calculations/`},
+    {t: `Luwisha, N. (2018, November 20). Euler in maths and engineering. The Aperiodical. `, l: `https://aperiodical.com/2018/11/eulers-method-in-structural-engineering/`},
+    {t: `Khan, S., Williams, C., Khim, J., & Ross, E. (n.d.). Euler's Method. Brilliant.`, l: `https://brilliant.org/wiki/eulers-method/`},
 
 ]
 

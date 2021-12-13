@@ -6,13 +6,40 @@ import MemberCard from '../components/MemberCard';
 import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 import { Members } from '../utils/Members';
+import aguilar from '../img/members/aguilar.jpg';
+import alba from '../img/members/alba.jpg';
+import alejandro from '../img/members/alejandro.jpg';
+import matias from '../img/members/matias.jpg';
 
 const members = [
-    {name: Members.aguilar, course: `BA Communication Arts`},
-    {name: Members.alba, course: `BS Computer Science`, email: `aaalba1@up.edu.ph`},
-    {name: Members.alejandro, course: `BS Forestry`},
-    {name: Members.datinguinoo, course: `BS Agriculture`},
-    {name: Members.matias, course: `BS Agricultural Biotechnology`},
+    {
+        name: Members.aguilar,
+        course: `BA Communication Arts`,
+        email: `muaguilar@up.edu.ph`,
+        image: aguilar,
+    },
+    {
+        name: Members.alba, 
+        course: `BS Computer Science`, 
+        email: `aaalba1@up.edu.ph`,
+        image: alba,
+    },
+    {
+        name: Members.alejandro, 
+        course: `BS Forestry`, 
+        email: `csalejandro1@up.edu.ph`,
+        image: alejandro,
+    },
+    {
+        name: Members.datinguinoo, 
+        course: `BS Agriculture`,
+    },
+    {
+        name: Members.matias, 
+        course: `BS Agricultural Biotechnology`, 
+        email: `nfmatias@up.edu.ph`,
+        image: matias
+    },
 ]
 
 export default function About() {
@@ -25,9 +52,8 @@ export default function About() {
             {/* Header padding */}
             <Box display="block" sx={{height: 44}} />
 
-            
             <Box
-                marginTop={2}
+                marginTop={1}
                 width="100vw">
                 <Typography
                     color={Colors.secondary}
@@ -37,13 +63,12 @@ export default function About() {
                     variant="h2">
                     Members
                 </Typography>
-            </Box>
-            
+            </Box>           
 
             <Grid
-                spacing={3}
+                spacing={1}
                 direction="row"
-                padding={2}
+                padding={1}
                 paddingLeft={20}
                 paddingRight={20}
                 align="center"
@@ -61,7 +86,8 @@ export default function About() {
                                 <MemberCard 
                                     name={e.name}
                                     course={e.course}
-                                    email={e.email} />
+                                    email={e.email}
+                                    image={e.image} />
                         </Grid>
                     ))
                 }

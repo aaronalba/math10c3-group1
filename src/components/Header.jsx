@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <Box sx={{flexGrow: 1}}>
-      <AppBar position="absolute" sx={{backgroundColor: Colors.primary}}>
+      <AppBar position="absolute" sx={{backgroundColor: Colors.secondary}}>
         <Toolbar>
           {/* Menu */}
           <IconButton

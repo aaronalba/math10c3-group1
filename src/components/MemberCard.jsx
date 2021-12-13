@@ -3,11 +3,13 @@ import * as React from "react";
 import { Colors } from "../utils/Colors";
 import { Font } from '../utils/Font';
 
-export default function MemberCard({name, course, email}) {
+export default function MemberCard({name, course, email, image}) {
     return (
         <Card
             sx={{
-                minWidth: 250,
+                minWidth: 275,
+                maxWidth: 275,
+                minHeight: 225,
                 border: `3px solid ${Colors.primary}`
             }}
             variant="outlined">
@@ -18,15 +20,16 @@ export default function MemberCard({name, course, email}) {
                 flexDirection: 'column',
                 alignItems: 'center',
             }}>
-                <div style={{
-                    width: 75,
-                    height: 75,
-                    border: `1px solid #ccc`,
-                    marginBottom: 10,
-                    borderRadius: 50,
-                }}>
-
-                </div>
+            
+                <img
+                    src={image} 
+                    style={{
+                        width: 75,
+                        height: 75,
+                        border: `1px solid #ccc`,
+                        marginBottom: 3,
+                        borderRadius: 50,
+                        }}/>
 
                 <Typography
                     fontFamily={Font.headings}

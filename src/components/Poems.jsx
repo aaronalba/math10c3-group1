@@ -1,8 +1,7 @@
-import { Container, Divider, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
 import { Font } from '../utils/Font';
-import Sample from '../img/sample.png';
 import PuzzlingWorld from '../img/puzzling_world.png';
 import OneTwist1 from '../img/one_twist_1_min.png';
 import OneTwist2 from '../img/one_twist_2_min.png';
@@ -30,7 +29,7 @@ export default function Poems() {
             </Typography>
 
 
-
+            
 
             <Grid container
                 spacing={3}
