@@ -12,7 +12,7 @@ import {
   ListItemIcon, 
   ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import SubjectIcon from '@mui/icons-material/Subject';
+import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
@@ -29,7 +29,7 @@ export default function Header() {
   const location = useLocation()
 
   const drawerItems = [
-    {text: "Home", icon: <SubjectIcon/>, path: "/"},
+    {text: "Home", icon: <HomeIcon/>, path: "/"},
     {text: "Write-up", icon: <DriveFileRenameOutlineIcon />, path: "/writeup"},
     {text: "About", icon: <InfoIcon />, path: "/about"},
     {text: "References", icon: <LibraryBooksIcon />, path: "/references"},
