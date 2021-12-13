@@ -1,5 +1,6 @@
 import { Container, Grid, Typography } from '@mui/material';
 import * as React from 'react';
+import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 
 const imgSize = 350;
@@ -47,10 +48,18 @@ export default function ArtworkItem({title, author, content, color, left, img}) 
     const getContent = () => {
         return (
             <Container>
-                <Typography variant="h5" fontFamily={Font.headings} fontWeight={700}>
+                <Typography 
+                    color={Colors.secondary}
+                    variant="h4"
+                    fontFamily={Font.headings}
+                    fontWeight={700}>
                     {title}
                 </Typography>
-                <Typography variant="p" fontFamily={Font.headings}>
+                <Typography 
+                    fontWeight={400}
+                    color={Colors.primary} 
+                    variant="p" 
+                    fontFamily={Font.headings}>
                     by {author}
                 </Typography>
                 <br/>                      
@@ -59,7 +68,7 @@ export default function ArtworkItem({title, author, content, color, left, img}) 
                 {
                     content.map(e => (                        
                         <>
-                            <Typography variant="p" fontFamily={Font.paragraphs}>
+                            <Typography color={Colors.secondary} variant="p" fontFamily={Font.paragraphs}>
                                 {e}
                             </Typography>
                             {(content.length > 1) ? <><br/><br/></> :  null}

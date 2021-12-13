@@ -10,6 +10,7 @@ import ArtworkWhite from "../img/white_plain_min.png";
 import ArtworkGreen from "../img/green_plain_min.png";
 import ArtworkBlue from "../img/blue_plain_min.png";
 import { Members } from '../utils/Members';
+import { Colors } from '../utils/Colors';
 
 const yellow_title = "Math in space exploration"
 const orange_title = "Mathematics in nature"
@@ -47,6 +48,8 @@ export default function Artworks() {
             width="100vw"
             marginTop={15}>
             <Typography
+                color={Colors.primary}
+                fontWeight={500}
                 fontFamily={Font.headings}
                 textAlign="center"
                 variant="h2">

@@ -1,6 +1,7 @@
 import { Typography, Container } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
+import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 
 const containerMarginTop = 5
@@ -13,7 +14,9 @@ export default function Introduction() {
             width="100vw"
             marginTop={15}>
             <Typography
+                color={Colors.primary}
                 fontFamily={Font.headings}
+                fontWeight={500}
                 textAlign="center"
                 variant="h2">
                 Introduction
