@@ -10,19 +10,21 @@ import {
   List, 
   ListItem, 
   ListItemIcon, 
-  ListItemText } from '@mui/material';
+  ListItemText, 
+  Link} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import DownloadIcon from '@mui/icons-material/Download';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Colors } from '../utils/Colors';
 import { Font } from '../utils/Font';
 
 const drawerWidth = 250
 
-export default function Header() {
+export default function Header({pdfDownloadLink}) {
   const [isDrawerOpen, setDrawerOpen] = useState(false)
 
   const navigate = useNavigate()
@@ -39,6 +41,13 @@ export default function Header() {
    * Shows and hides the drawer
    */
   const toggleDrawer = () => setDrawerOpen(!isDrawerOpen)
+
+  /**
+   * Downloads the pdf file
+   */
+  const downloadPDF = () => {
+
+  }
 
   return (
     <Box sx={{flexGrow: 1}}>
@@ -64,6 +73,23 @@ export default function Header() {
             variant="h6">
             Math 10 Project
           </Typography>
+
+
+          {/* Download link */}
+          {pdfDownloadLink ? (
+            <Link
+              href={pdfDownloadLink}
+              color="#ffffff">
+              <IconButton
+                onClick={downloadPDF}
+                edge="start"
+                color="inherit"
+                aria-label="menu">
+                <DownloadIcon/>
+              </IconButton>
+            </Link>
+          ) : null}
+
         </Toolbar>
       </AppBar>
 

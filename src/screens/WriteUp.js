@@ -6,6 +6,8 @@ import pdf from '../docs/MATH10C3G1_Write-up.pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { Container } from '@mui/material';
 
+const pdfDownloadLink = 'https://drive.google.com/file/d/1Z_jMcZCRW0vmlrQUFf3oH8iTwG9dHVyY/view?usp=sharing';
+
 export default function WriteUp() {
     const [numPages, setNumPages] = useState(null);
 
@@ -20,7 +22,7 @@ export default function WriteUp() {
             
             sx={{backgroundColor: Colors.background1}}>
             {/* Navigation Header */}
-            <Header/>
+            <Header pdfDownloadLink={pdfDownloadLink} />
             {/* Header padding */}
             <Box display="block" sx={{height: 44}} />
 
