@@ -96,7 +96,7 @@ export default function ArtworkItem({title, author, content, color, left, img, l
 
             {last ? null : (
                 <Container>
-                    <Divider color={Colors.primary} />
+                    <Divider color={Colors.primaryLight} />
                 </Container>
             )}            
         </>
