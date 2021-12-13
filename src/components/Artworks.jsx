@@ -96,6 +96,7 @@ export default function Artworks() {
 
             {/* Artwork White */}
             <ArtworkItem
+                last
                 content={white_content}
                 author={Members.aguilar}
                 title={white_title}

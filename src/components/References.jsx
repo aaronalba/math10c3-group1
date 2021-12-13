@@ -49,6 +49,7 @@ export default function Reference() {
                     <Typography variant="body1">
                         {e.t}
                         <Link
+                            fontFamily={Font.paragraphs}
                             color={Colors.secondary}
                             href={e.l} 
                             sx={{
