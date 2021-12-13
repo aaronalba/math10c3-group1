@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography } from '@mui/material';
+import { Container, Divider, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import * as React from 'react';
 import { Font } from '../utils/Font';
@@ -18,7 +18,6 @@ const alejandro_title = `One Twist At A Time`
 export default function Poems() {
     return (
         <Box             
-            display="block"
             width="100vw"
             marginTop={15}>
             <Typography
@@ -30,13 +29,16 @@ export default function Poems() {
                 Poems
             </Typography>
 
+
+
+
             <Grid container
                 spacing={3}
                 align="center"
                 padding={10} >
                 
                 {/* Poem 1 Part 1*/}
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} sm={12} md={6} xl={12}>
                     <img
                         width={480}
                         height={853} 
@@ -44,40 +46,12 @@ export default function Poems() {
                         alt="poem" />
                 </Grid>
                 {/* Poem 1 Part 2*/}
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} sm={12} md={6} xl={12}>
                     <img
                         width={480}
                         height={853} 
                         src={OneTwist2}
                         alt="poem" />
-                </Grid>
-                
-                <Grid item xs={12} md={12}>
-                    <>
-                        <Typography
-                            color={Colors.secondary}
-                            fontWeight={700}
-                            variant="h4" 
-                            fontFamily={Font.headings}>
-                            {alejandro_title}
-                        </Typography>
-                        <Typography
-                            color={Colors.primary}
-                            fontWeight={400}
-                            variant="p" 
-                            fontFamily={Font.headings}>
-                            {`by ${Members.alejandro}`}
-                        </Typography>
-                    </>
-                </Grid>
-
-                <Grid item xs={12}>
-                    <Typography 
-                        color={Colors.secondary}
-                        variant="p" 
-                        fontFamily={Font.paragraphs}>
-                        {alejandro_content}
-                    </Typography>
                 </Grid>
             </Grid>
 
@@ -87,7 +61,7 @@ export default function Poems() {
                 padding={10} >
 
                 {/* Poem 2 */}
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} xl={12}>
                     <img
                         width={480}
                         height={679}
@@ -96,8 +70,39 @@ export default function Poems() {
                 </Grid>
 
 
-                <Grid item xs={12} md={6}>
-                    <>
+                <Grid item xs={12} md={6} xl={12}>
+                    <Container>
+
+                        {/* Poem 1 content title */}
+                            <Typography
+                                color={Colors.secondary}
+                                fontWeight={700}
+                                variant="h4" 
+                                fontFamily={Font.headings}>
+                                {alejandro_title}
+                            </Typography>                        
+                            <Typography
+                                color={Colors.primary}
+                                fontWeight={400}
+                                variant="p" 
+                                fontFamily={Font.headings}>
+                                {`by ${Members.alejandro}`}
+                            </Typography>                    
+                        <br/>
+                        <br/>
+                           
+                        {/* Poem 1 content */}
+                        <Typography 
+                            color={Colors.secondary}
+                            variant="p" 
+                            fontFamily={Font.paragraphs}>
+                            {alejandro_content}
+                        </Typography>
+                    
+                        <br/>
+                        <br/>
+
+                        {/* Poem 2 content title */}
                         <Typography 
                             color={Colors.secondary}
                             fontWeight={700}
@@ -114,17 +119,15 @@ export default function Poems() {
                         </Typography>
                         <br/>
                         <br/>
+
+                        {/* Poem 2 content */}
                         <Typography 
                             color={Colors.secondary}
                             variant="p" 
                             fontFamily={Font.paragraphs}>
                             {alba_content}
-                        </Typography>
-                    </>
-                </Grid>
-
-                <Grid item xs={12}>
-                    
+                        </Typography>   
+                    </Container>
                 </Grid>
             </Grid>
         </Box>
