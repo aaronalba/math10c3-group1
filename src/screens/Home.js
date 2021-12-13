@@ -6,7 +6,6 @@ import { Box } from '@mui/system';
 import Artworks from '../components/Artworks';
 import Poems from '../components/Poems';
 import { Colors } from '../utils/Colors';
-import Reference from '../components/References';
 
 function Home() {
     return (
@@ -34,7 +33,7 @@ function Home() {
 
             {/* Poems section */}
             <Poems />
-            
+
         </Box>
     )
 }

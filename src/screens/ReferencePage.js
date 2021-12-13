@@ -9,7 +9,7 @@ export default function ReferencePage() {
         <Box
             width={"100vw"}
             height={"100%"}
-            
+            marginBottom={5}
             sx={{backgroundColor: Colors.background1}}>
             {/* Navigation Header */}
             <Header/>
